@@ -1,4 +1,3 @@
-// Page 1 javascript
 function addNewSurveyRow(fileName) {
     var tableRef = document.getElementById('table').getElementsByTagName('tbody')[0];
 
@@ -18,9 +17,12 @@ function addNewSurveyRow(fileName) {
 
     var edit = newRow.insertCell(2);
     var editButtonLink = document.createElement("a");
+    editButtonLink.setAttribute("id", "edit");
     var editButtonDiv = document.createElement("div");
+    editButtonDiv.setAttribute("id", "editDiv");
     var editButtonText = document.createTextNode("Edit");
+    editButtonText.setAttribute("id", "editText");
     editButtonDiv.appendChild(editButtonText);
     editButtonLink.appendChild(editButtonDiv);
     edit.appendChild(editButtonLink);
- }   
+ }    
