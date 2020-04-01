@@ -28,6 +28,7 @@ body {
     color: white;
     line-height: 45px;
     font-size: 18px;
+    font-family: Lato;
 }
 
 #surveyList {
@@ -35,11 +36,25 @@ body {
     width: 95%;
     margin: 2%;
     height: 325px;
+    border-collapse: collapse;
     overflow-y: scroll;
 }
 
 #table {
      width: 100%;
+     height: 95%;
+}
+
+th {
+    padding-bottom: 10px;
+    font-size: 20px;
+    padding-right: 90px;
+    font-family: Lato;
+}
+
+td {
+    font-size: 18px;
+    font-family: Lato;
 }
 
 tr {
@@ -49,6 +64,29 @@ tr {
     justify-content: space-between;
     align-items: flex-start;
     overflow: hidden;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    height: 40px;
+    margin-top: 5px;
+}
+
+#editDiv {
+    background-color: #b7bf35;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    margin: none;
+}
+
+#edit {
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+#editText {
+    color: black;
+    line-height: 30px;
+    margin: 1px 0;
 }
 
 
@@ -65,6 +103,6 @@ tr {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #762F89;
+    background: #018eaa;
     border-radius: 10px;
   }
