@@ -1,1 +1,240 @@
 /* css for the page where users write recommendations and exports pdfs */
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-x: hidden;
+}
+
+#nccnp {
+    height: 20%;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    overflow: hidden;
+    width: 50%;
+    margin-top: 6%;
+}
+
+#name {
+    border: 2px solid #018eaa;
+    border-radius: 4px;
+    width: 200px;
+    height: 40px;
+    padding-left: 2%;
+}
+
+#save {
+    background-color: #b7bf35;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+}
+
+#saveText {
+    color: white;
+    line-height: 45px;
+    font-size: 18px;
+    font-family: Lato;
+    display: unset;
+}
+
+#export {
+    background-color: #762F89;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+}
+
+#exportText {
+    color: white;
+    line-height: 45px;
+    font-size: 18px;
+    font-family: Lato;
+    display: unset;
+}
+
+#workspace {
+    width: 95%;
+    margin: 2%;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+h2 {
+    width: 75%;
+    align-content: right;
+    margin: 0 auto;
+    position: relative;
+    left: 27%;
+    font-family: Lato;
+}
+
+h3 {
+    color: #762F89;
+}
+
+h3, p{
+    font-family: Lato;
+    margin: 0 0 15px 4px;
+}
+
+p strong {
+    color:#018eaa;
+}
+
+table {
+     width: 100%;
+     height: 95%;
+     border-collapse: collapse;
+     border: 1.5px solid black;
+}
+
+tr {
+    border-bottom: 1.5px solid black;
+}
+
+td {
+    width: 50%;
+}
+
+.a {
+    padding-left: 20px;
+}
+
+.q {
+    color: #018eaa;
+}
+
+.survey {
+    border-right: 1.5px solid black;
+    vertical-align: top;
+}
+
+.type {
+    border: 1px solid black;
+    margin-left: 15;
+    width: 98%;
+    height: 100px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    font-family: Lato;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #018eaa;
+    border-radius: 10px;
+  }
+
+
+  /* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #b7bf35; /* Black background color */
+    color: black; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 40%; /* Center the snackbar */
+    top: 20px; /* 30px from the bottom */
+    font-family: Lato;
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 20px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 20px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 20px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 20px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+
+
+
+/* Style for exported pdf */
+  @media print {
+
+    #nccnp {
+        width: 200px;
+        margin-left: 10%;
+    }
+
+    #buttons {
+        display: none;
+    }
+
+    h2 {
+        width: auto;
+        position: inherit;
+        margin-top: 10%;
+    }
+
+    #workspace {
+        border: none;
+    }
+
+    table {
+        page-break-inside: auto;
+    }
+
+    tr {
+        page-break-inside:avoid; 
+        page-break-after:auto
+    }
+
+    #workspace {
+        height: auto;
+    }
+
+    .type {
+        display: none;
+    }
+
+    ::-webkit-scrollbar-track {
+        display: none;
+    }
+  }
