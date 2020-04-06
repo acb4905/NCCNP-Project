@@ -1,1 +1,202 @@
-<!-- the page where users write recommendations and exports pdfs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/recommendations.css">
+    <script src="js/recommendations.js"></script>
+</head>
+<body>
+    <div id="snackbar">*Please type your name in the box to save your recommendations</div>
+    <img src = "images/nccnpLogo.svg" alt = "NCCNP Logo" id = "nccnp"/>
+    <div id="buttons">
+    <input type="text" placeholder="*Recommender's Name" id="name">
+    <div id = "save" onClick="save()"><p id = "saveText">Save</p></div>
+    <div id = "export" onClick="window.print()"><p id = "exportText">Export</p></div>
+    </div>
+    <h2 id="npName">Nonprofit Name</h2>
+    <section id = "workspace">
+        <table>
+            <tr>
+                <td class="survey">
+                    <h3>1. Advocacy and Civil Engagement</h3>
+                    <p class="q">What is the current condition of your nonprofit?</p>
+                    <p class="a">Nonprofit's Response</p>
+                    <p class="q">In what condition would you like your nonprofit to be a year from now?</p>
+                    <p class="a">Nonprofit's Response</p>
+                </td>
+                <td class="response">
+                    <div class ="recommendations">
+                    <p><strong>Jane Doe: </strong>  Doing great!</p>
+                    </div>
+                    <textarea placeholder="Type your recommendation here..." class="type"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="survey">
+                    <h3>2. Board Governance</h3>
+                    <p class="q">What is the current condition of your nonprofit?</p>
+                    <p class="a"> Nonprofit's Response</p>
+                    <p class="q">In what condition would you like your nonprofit to be a year from now?</p>
+                    <p class="a"> Nonprofit's Response</p>
+                </td>
+                <td class="response">
+                    <div class ="recommendations">
+                        <p><strong>Jane Doe: </strong>  Doing great!</p>
+                    </div>
+                    <textarea placeholder="Type your recommendation here..." class="type"></textarea>
+                </td>
+            </tr>  
+            <tr>
+                <td class="survey">
+                    <h3>3. Equity, Diversity, and Inclusion</h3>
+                    <p class="q">What is the current condition of your nonprofit?</p>
+                    <p class="a"> Nonprofit's Response</p>
+                    <p class="q">In what condition would you like your nonprofit to be a year from now?</p>
+                    <p class="a"> Nonprofit's Response</p>
+                </td>
+                <td class="response">
+                    <div class ="recommendations">
+                        <p><strong>Jane Doe: </strong>  Doing great!</p>
+                    </div>
+                    <textarea placeholder="Type your recommendation here..." class="type"></textarea>
+                </td>
+            </tr>
+            <tr>    
+                <td class="survey">
+                    <h3>4. Financial Management</h3>
+                    <p class="q">What is the current condition of your nonprofit?</p>
+                    <p class="a"> Nonprofit's Response</p>
+                    <p class="q">In what condition would you like your nonprofit to be a year from now?</p>
+                    <p class="a"> Nonprofit's Response</p>
+                </td>
+                <td class="response">
+                    <div class ="recommendations">
+                        <p><strong>Jane Doe: </strong>  Doing great!</p>
+                    </div>
+                    <textarea placeholder="Type your recommendation here..." class="type"></textarea>
+                </td>
+            </tr>
+            <tr>  
+                <td class="survey">
+                    <h3>5. Fundraising</h3>
+                    <p class="q">What is the current condition of your nonprofit?</p>
+                    <p class="a"> Nonprofit's Response</p>
+                    <p class="q">In what condition would you like your nonprofit to be a year from now?</p>
+                    <p class="a"> Nonprofit's Response</p>
+                </td>
+                <td class="response">
+                    <div class ="recommendations">
+                        <p><strong>Jane Doe: </strong>  Doing great!</p>
+                    </div>
+                    <textarea placeholder="Type your recommendation here..." class="type"></textarea>
+                </td>
+            </tr>
+            <tr>   
+                <td class="survey">
+                    <h3>6. Human Resources</h3>
+                    <p class="q">What is the current condition of your nonprofit?</p>
+                    <p class="a"></p>
+                    <p class="q">In what condition would you like your nonprofit to be a year from now?</p>
+                    <p class="a"></p>
+                </td>
+                <td class="response">
+                    <div class ="recommendations">
+                        <p><strong>Jane Doe: </strong>  Doing great!</p>
+                    </div>
+                    <textarea placeholder="Type your recommendation here..." class="type"></textarea>
+                </td>
+            </tr>
+            <tr>  
+                <td class="survey">
+                    <h3>7. Information and Technology</h3>
+                    <p class="q">What is the current condition of your nonprofit?</p>
+                    <p class="a"></p>
+                    <p class="q">In what condition would you like your nonprofit to be a year from now?</p>
+                    <p class="a"></p>
+                </td>
+                <td class="response">
+                    <div class ="recommendations">
+                        <p><strong>Jane Doe: </strong>  Doing great!</p>
+                    </div>
+                    <textarea placeholder="Type your recommendation here..." class="type"></textarea>
+                </td>
+            </tr>
+            <tr>  
+                <td class="survey">
+                    <h3>8. Legal Compliance and Transparency</h3>
+                    <p class="q">What is the current condition of your nonprofit?</p>
+                    <p class="a"></p>
+                    <p class="q">In what condition would you like your nonprofit to be a year from now?</p>
+                    <p class="a"></p>
+                </td>
+                <td class="response">
+                    <div class ="recommendations">
+                        <p><strong>Jane Doe: </strong>  Doing great!</p>
+                    </div>
+                    <textarea placeholder="Type your recommendation here..." class="type"></textarea>
+                </td>
+            </tr>
+            <tr>  
+                <td class="survey">
+                    <h3>9. Partnerships and Collaboration</h3>
+                    <p class="q">What is the current condition of your nonprofit?</p>
+                    <p class="a"></p>
+                    <p class="q">In what condition would you like your nonprofit to be a year from now?</p>
+                    <p class="a"></p>
+                </td>
+                <td class="response">
+                    <div class ="recommendations">
+                        <p><strong>Jane Doe: </strong>  Doing great!</p>
+                    </div>
+                    <textarea placeholder="Type your recommendation here..." class="type"></textarea>
+                </td>
+            </tr>
+            <tr>  
+                <td class="survey">
+                    <h3>10. Program Design, Management, and Evaluation</h3>
+                    <p class="q">What is the current condition of your nonprofit?</p>
+                    <p class="a"></p>
+                    <p class="q">In what condition would you like your nonprofit to be a year from now?</p>
+                    <p class="a"></p>
+                </td>
+                <td class="response">
+                    <div class ="recommendations">
+                        <p><strong>Jane Doe: </strong>  Doing great!</p>
+                    </div>
+                    <textarea placeholder="Type your recommendation here..." class="type"></textarea>
+                </td>
+            </tr>
+            <tr>  
+                <td class="survey">
+                    <h3>11. Strategic Communication</h3>
+                    <p class="q">What is the current condition of your nonprofit?</p>
+                    <p class="a"></p>
+                    <p class="q">In what condition would you like your nonprofit to be a year from now?</p>
+                    <p class="a"></p>
+                </td>
+                <td class="response">
+                    <div class ="recommendations">
+                        <p><strong>Jane Doe: </strong>  Doing great!</p>
+                    </div>
+                    <textarea placeholder="Type your recommendation here..." class="type"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="survey">
+                    <h3>12. Strategic Planning</h3>
+                    <p class="q">What is the current condition of your nonprofit?</p>
+                    <p class="a"></p>
+                    <p class="q">In what condition would you like your nonprofit to be a year from now?</p>
+                    <p class="a"></p>
+                </td>
+                <td class="response">
+                    <div class ="recommendations">
+                        <p><strong>Jane Doe: </strong>  Doing great!</p>
+                    </div>
+                    <textarea placeholder="Type your recommendation here..." class="type"></textarea>
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
